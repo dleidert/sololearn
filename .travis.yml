@@ -1,0 +1,18 @@
+language: ruby
+
+cache:
+  bundler: true
+
+notifications:
+  email:
+    on_success: never
+
+rvm:
+- 2.5
+- 2.6
+- 2.7
+
+script:
+- bundle exec rake
+
+# vim: set ts=2 sw=2 ai si et:
