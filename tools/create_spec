@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+challenge=$1
+
+test -f spec/${challenge}_spec.rb && exit 0
+
+cp tools/skel_spec.rb spec/${challenge}_spec.rb
+sed -i -e "s/Skel/${challenge}/g" spec/${challenge}_spec.rb
