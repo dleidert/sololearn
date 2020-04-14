@@ -2,19 +2,8 @@
 
 string = STDIN.gets.chomp
 
-money = string.index('$')
-thief = string.index('T')
-
-unless money and thief
-  puts "quiet"
-  exit
-end
-
-if money < thief
-  substr = string[money..thief]
-else
-  substr = string[thief..money]
-end
+substr = string[/\$[^T]*T/] ? string[/\$[^T]*T/] : string[/T[^\$]*\$/]
+exit unless substr
 
 if substr.include?('G') then
   puts "quiet"
