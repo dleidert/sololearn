@@ -6,15 +6,15 @@ end
 
 describe "ItsASign" do
   it "Sample case" do
-    allow($stdin).to receive(:read).and_return("CAT\nMONDAYS\nRACECAR\nTACOS\n")
+    allow(STDIN).to receive(:read).and_return("CAT\nMONDAYS\nRACECAR\nTACOS\n")
     expect { run_ItsASign }.to output("Open\n").to_stdout
   end
   it "Test case #1" do
-    allow($stdin).to receive(:read).and_return("ABBA\nFANCY\nNEVERMIND\n")
+    allow(STDIN).to receive(:read).and_return("ABBA\nFANCY\nNEVERMIND\n")
     expect { run_ItsASign }.to output("Open\n").to_stdout
   end
   it "Test case #2" do
-    allow($stdin).to receive(:read).and_return("LIVE\nLAUGH\nLOVE\n")
+    allow(STDIN).to receive(:read).and_return("LIVE\nLAUGH\nLOVE\n")
     expect { run_ItsASign }.to output("Trash\n").to_stdout
   end
 end

@@ -6,11 +6,11 @@ end
 
 describe "Popsicles" do
   it "Test case #1" do
-    allow($stdin).to receive(:gets).and_return("2", "5")
+    allow(STDIN).to receive(:gets).and_return("2", "5")
     expect { run_Popsicles }.to output("eat them yourself\n").to_stdout
   end
   it "Test case #2" do
-    allow($stdin).to receive(:gets).and_return("10", "20")
+    allow(STDIN).to receive(:gets).and_return("10", "20")
     expect { run_Popsicles }.to output("give away\n").to_stdout
   end
 

@@ -6,15 +6,15 @@ end
 
 describe "Security" do
   it "Sample case" do
-    allow($stdin).to receive(:gets).and_return("xxxxxGxx$xxxT\n")
+    allow(STDIN).to receive(:gets).and_return("xxxxxGxx$xxxT\n")
     expect { run_Security }.to output("ALARM\n").to_stdout
   end
   it "Test case #1" do
-    allow($stdin).to receive(:gets).and_return("xxxGGxx$xxGxxT\n")
+    allow(STDIN).to receive(:gets).and_return("xxxGGxx$xxGxxT\n")
     expect { run_Security }.to output("quiet\n").to_stdout
   end
   it "Test case #2" do
-    allow($stdin).to receive(:gets).and_return("T$xxxxxxxG\n")
+    allow(STDIN).to receive(:gets).and_return("T$xxxxxxxG\n")
     expect { run_Security }.to output("ALARM\n").to_stdout
   end
 end

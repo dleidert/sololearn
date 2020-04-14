@@ -6,15 +6,15 @@ end
 
 describe "JungleCamping" do
   it "Sample case" do
-    allow($stdin).to receive(:gets).and_return("Rawr Chirp Ssss\n")
+    allow(STDIN).to receive(:gets).and_return("Rawr Chirp Ssss\n")
     expect { run_JungleCamping }.to output("Tiger Bird Snake\n").to_stdout
   end
   it "Test case #1" do
-    allow($stdin).to receive(:gets).and_return("Grr Grr\n")
+    allow(STDIN).to receive(:gets).and_return("Grr Grr\n")
     expect { run_JungleCamping }.to output("Lion Lion\n").to_stdout
   end
   it "Test case #2" do
-    allow($stdin).to receive(:gets).and_return("Ssss\n")
+    allow(STDIN).to receive(:gets).and_return("Ssss\n")
     expect { run_JungleCamping }.to output("Snake\n").to_stdout
   end
 end
