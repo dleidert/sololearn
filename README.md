@@ -1,7 +1,7 @@
 # sololearn
 
-[![GitHub license](https://img.shields.io/github/license/dleidert/sololearn.svg)](https://raw.githubusercontent.com/dleidert/sololearn/master/LICENSE)
-![GitHub top language](https://img.shields.io/github/languages/top/dleidert/sololearn.svg)
+[![License](https://img.shields.io/github/license/dleidert/sololearn.svg)](https://raw.githubusercontent.com/dleidert/sololearn/master/LICENSE)
+![Language](https://img.shields.io/github/languages/top/dleidert/sololearn.svg)
 [![Build Status](https://travis-ci.org/dleidert/sololearn.svg?branch=master)](https://travis-ci.org/dleidert/sololearn)
   
 These are solutions to [SoloLearn's](https://www.sololearn.com/) Code Coach
