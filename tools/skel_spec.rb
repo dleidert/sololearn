@@ -6,15 +6,15 @@ end
 
 describe "Skel" do
   it "Sample case" do
-    allow($stdin).to receive(:gets).and_return("\n")
+    allow(STDIN).to receive(:gets).and_return("\n")
     expect { run_Skel }.to output("\n").to_stdout
   end
   it "Test case #1" do
-    allow($stdin).to receive(:gets).and_return("\n")
+    allow(STDIN).to receive(:gets).and_return("\n")
     expect { run_Skel }.to output("\n").to_stdout
   end
   it "Test case #2" do
-    allow($stdin).to receive(:gets).and_return("\n")
+    allow(STDIN).to receive(:gets).and_return("\n")
     expect { run_Skel }.to output("\n").to_stdout
   end
 end
