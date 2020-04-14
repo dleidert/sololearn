@@ -2,7 +2,7 @@
 
 set -e
 
-challenge=$1
+challenge=$(basename $1 .rb)
 
 test -f spec/${challenge}_spec.rb && exit 0
 
