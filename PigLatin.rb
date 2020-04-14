@@ -1,6 +1,7 @@
 #!/bin/ruby
 
-input = gets.chomp
+input = STDIN.gets.chomp
+
 arr = input.split(' ')
 arr.map { |w| w.strip! }
 

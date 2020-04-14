@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-fruit = gets.chomp.to_i
+fruit = STDIN.gets.chomp.to_i
 
 apples = fruit / 2
 pies = apples / 3
