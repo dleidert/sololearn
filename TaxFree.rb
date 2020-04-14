@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-input = gets.chomp.to_s
+input = STDIN.gets.chomp.to_s
 
 prices = input.split(',').map { |p| p.to_f }
 
