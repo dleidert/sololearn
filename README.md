@@ -7,4 +7,6 @@ openly used by SoloLearn.
 If you have ever wondered how to test a ruby script which gets input from a
 user using rspec, then checkout the [spec](/spec) directory.
 
+All examples are put into public domain, see [LICENSE](LICENSE).
+
 <!-- vim: set tw=79 ts=2 sw=2 ai si et: -->
